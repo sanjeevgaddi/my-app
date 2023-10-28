@@ -2,29 +2,64 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import './index.css'
+import { books } from './books'
+import Book from './Book'
 
 const BookList = () => {
+  const getBook = (id) => {
+    const book = books.find((book) => book.id === id)
+  }
   return (
-    <section className="booklist">
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-    </section>
-  )
-}
-
-const Book = () => {
-  const title = 'Forever Strong: A New, Science-Based Strategy for Agingggggggg'
-  const author = 'Dr. Gabrielle Lyon'
-  return (
-    <article className="book">
-      <img src="./images/book-1.jpg" alt="{title}" />,<h2>{title}</h2>,
-      <h4>{author}</h4>
-    </article>
+    <>
+      <h1>amazon best sellers</h1>
+      <section className="booklist">
+        {books.map((book, index) => {
+          return (
+            <Book {...book} key={book.id} getBook={getBook} number={index} />
+          )
+        })}
+      </section>
+    </>
   )
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(<BookList />)
+
+// const handleFormInput = (e) => {
+// console.log(e)
+// console.log(e.target)
+//   console.log(e.target.name)
+//   console.log(e.target.value)
+// }
+// const handleButtonClick = () => {
+//   alert('handle button click')
+// }
+
+// const handleFormSubmisssion = (e) => {
+//   e.preventDefault()
+//   console.log('form submitted')
+// }
+
+// const EventExamples = () => {
+//   return (
+//     <section>
+//       <form onSubmit={handleFormSubmisssion}>
+//         <h2>Typical Form</h2>
+//         <input
+//           type="text"
+//           name="event"
+//           onChange={handleFormInput}
+//           style={{ margin: '1rem' }}
+//         />
+//         <button type="submit">Submit</button>
+//         <div>
+//           <button onClick={handleButtonClick} type="button">
+//             Click Me
+//           </button>
+//         </div>
+//       </form>
+//     </section>
+//   )
+// }
