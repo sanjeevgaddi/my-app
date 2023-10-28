@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/amazon-best-sellers-books/static/css/main.ea2593bb.css",
+    "main.js": "/amazon-best-sellers-books/static/js/main.5b59d9ec.js",
+    "static/media/book-6.jpg": "/amazon-best-sellers-books/static/media/book-6.95c8c558079a8e452d76.jpg",
+    "static/media/book-3.jpg": "/amazon-best-sellers-books/static/media/book-3.1247d592332611e3a647.jpg",
+    "static/media/book-4.jpg": "/amazon-best-sellers-books/static/media/book-4.28c910304b66ee7e497e.jpg",
+    "static/media/book-5.jpg": "/amazon-best-sellers-books/static/media/book-5.c7bdc92487f4bf1e75e4.jpg",
+    "index.html": "/amazon-best-sellers-books/index.html",
+    "main.ea2593bb.css.map": "/amazon-best-sellers-books/static/css/main.ea2593bb.css.map",
+    "main.5b59d9ec.js.map": "/amazon-best-sellers-books/static/js/main.5b59d9ec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea2593bb.css",
+    "static/js/main.5b59d9ec.js"
+  ]
+}
